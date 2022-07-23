@@ -5148,7 +5148,7 @@ textarea.form-control-lg {
 }
 .progress {
   display: flex;
-  height: 1rem;
+  height: 0.5rem;
   overflow: hidden;
   font-size: 0.75rem;
   background-color: #e9ecef;
@@ -7959,7 +7959,7 @@ textarea.form-control-lg {
 
 .text-white-50 {
   --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(255, 255, 255, 1) !important;
 }
 
 .text-reset {
@@ -8065,6 +8065,15 @@ textarea.form-control-lg {
 
 .bg-gradient {
   background-image: var(--bs-gradient) !important;
+}
+
+/* Skill Bar */
+.skill-sm {
+  height: 0.5rem !important;
+}
+
+.skill-lg {
+  height: 1.5rem !important;
 }
 
 .user-select-all {
@@ -11574,7 +11583,8 @@ body {
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
+  color: white;
+  /* -webkit-text-fill-color: transparent; */
   -webkit-background-clip: text;
           background-clip: text;
 }
