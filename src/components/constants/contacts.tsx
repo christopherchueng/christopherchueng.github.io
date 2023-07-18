@@ -33,7 +33,7 @@ export const bytype = {
 }
 
 export const icons = [
-    <Gmail className='w-4 h-4' fill="" />,
+    <Gmail className='w-4 h-4' />,
     <LinkedIn className='w-4 h-4' />,
     <GitHub className='w-4 h-4 ' />
 ]
