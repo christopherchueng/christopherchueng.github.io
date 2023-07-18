@@ -1,4 +1,4 @@
-export type Template = {
+export type Role = {
     link: string
     title: string
     location: string
@@ -6,7 +6,7 @@ export type Template = {
     description: string
 }
 
-const one: Template = {
+const one: Role = {
     link: "https://getmulberry.com",
     title: "Mulberry Technologies",
     location: "New York (Remote)",
@@ -18,4 +18,4 @@ export const bytitle = {
     one,
 }
 
-export const details = Object.values(bytitle)
+export const roles = Object.values(bytitle)
