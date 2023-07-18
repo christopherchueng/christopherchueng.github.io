@@ -46,7 +46,7 @@ const Header = () => (
                                 Channeling my artistic creativity on the frontend honed from my passions in dance and fashion, I design and create user-centered applications.
                                 Utilizing my knowledge in mathematics on the backend, I apply complex data structures and algorithms to problem solve with an analytical and curious mindset.
                                 With my bookkeeping skills sharpened from my accounting background, I stay organized by writing and refactoring code for efficiency and readability.
-                                Finally, embodying my own teaching philosophies in the classNamerooms, I provide guidance when necessary, collaborate,
+                                Finally, embodying my own teaching philosophies in the classrooms, I provide guidance when necessary, collaborate,
                                 and communicate effectively to deliver concepts in a clear and concise manner.
                                 All of these experiences have continuously put me in fast-paced environments to learn and perform on the spot while maintaining accuracy
                                 and have shaped me into the software engineer that I am today!
