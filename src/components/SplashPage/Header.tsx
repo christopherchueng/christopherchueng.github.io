@@ -1,4 +1,5 @@
 import { contacts, Contact, icons } from "../constants/contacts"
+import SocialLinks from "./SocialLinks"
 
 const Header = () => (
     <section>
@@ -27,13 +28,7 @@ const Header = () => (
                                 <p className="text-sm font-light text-neutral-500">
                                     Software Engineer
                                 </p>
-                                <div className="flex flex-row gap-6 mt-2">
-                                    {contacts.map((contact: Contact, index: number) => (
-                                        <div key={contact.title} className="text-neutral-500 items-start">
-                                            <a href={contact.link} className="text-neutral-400 dark:text-neutral-400">{icons[index]}</a>
-                                        </div>
-                                    ))}
-                                </div>
+                                <SocialLinks />
                             </div>
                         </div>
                     </div>
