@@ -10,18 +10,19 @@ const Header = () => (
                             <div className="flex-shrink-0">
                                 <div className="relative">
                                     <img
-                                    className="h-16 w-16 lg:h-24 lg:w-24 scale-125 rounded-full border border-white/10"
-                                    src="/images/avatar.png"
-                                    alt="profile icon"
+                                        className="h-16 w-16 lg:h-24 lg:w-24 rounded-full border border-white/10"
+                                        src="/images/avatar.png"
+                                        alt="profile icon"
                                     />
                                     <span
-                                    className="absolute inset-0 rounded-full shadow-inner"
-                                    aria-hidden="true"></span>
+                                        className="absolute inset-0 rounded-full shadow-inner"
+                                        aria-hidden="true"
+                                    ></span>
                                 </div>
                             </div>
                             <div className="pt-1.5">
                                 <h1 className="lg:text-xl text-black dark:text-white">
-                                    ✺ Christopher Chueng
+                                    Christopher Chueng
                                 </h1>
                                 <p className="text-sm font-light text-neutral-500">
                                     Software Engineer

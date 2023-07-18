@@ -33,9 +33,9 @@ export const bytype = {
 }
 
 export const icons = [
-    <Gmail className='w-4 h-4' />,
-    <LinkedIn className='w-4 h-4' />,
-    <GitHub className='w-4 h-4 ' />
+    <Gmail className='w-4 h-4 transition ease-in-out hover:scale-125 duration-200' />,
+    <LinkedIn className='w-4 h-4 transition ease-in-out hover:scale-125 duration-200' />,
+    <GitHub className='w-4 h-4 transition ease-in-out hover:scale-125 duration-200' />
 ]
 
 export const contacts = Object.values(bytype)
