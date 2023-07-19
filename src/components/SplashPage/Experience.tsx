@@ -42,7 +42,7 @@ const Experience = () => (
         ))}
         <a
           href="/resume.pdf"
-          className="group flex flex-row items-center text-neutral-500 hover:text-neutral-500 dark:text-neutral-400"
+          className="group flex w-fit flex-row items-center text-neutral-500 hover:text-neutral-500 dark:text-neutral-400"
         >
           <p className="text-black transition ease-in-out hover:text-neutral-500 dark:text-white">
             View Full Resume
