@@ -26,10 +26,10 @@ const Projects = () => (
                   className="flex flex-row transition ease-in-out group-hover:text-neutral-500"
                 >
                   {project.title}
-                </Link>
                 <p className="mt-0.5 pl-1 transition ease-in-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-neutral-500">
                   ↗
                 </p>
+                </Link>
               </p>
               <ul className="flex flex-row flex-wrap">
                 {project.technologies.map((technology) => (
