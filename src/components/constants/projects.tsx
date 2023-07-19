@@ -9,7 +9,7 @@ export type Project = {
 const one: Project = {
     image: "/images/timeout.png",
     title: "Timeout",
-    link: "https://www.timeout.onrender.com",
+    link: "https://timeout.onrender.com",
     technologies: ["Javascript", "React", "Redux", "Python"],
     description: "Inspired by Apple's Clock Alarm app, users will be able to create and toggle between alarms. Users will also be able to group alarms and simultaneously toggle them through Timeout's feature, Alarmlists!",
 }

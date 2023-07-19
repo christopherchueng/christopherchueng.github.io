@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     fontSize: {
       xxs: [
@@ -92,7 +93,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        black:"#222222",
+        black: "#121212",
         "accent": {
           "50": "#E5E5FF",
           "100": "#CCCCFF",
@@ -106,7 +107,6 @@ module.exports = {
           "900": "#000033"
         },
         blue:"#80D8FF",
-        darkBlue: "#005980"
       },
       fontFamily: {
         sans: ["Inter"],

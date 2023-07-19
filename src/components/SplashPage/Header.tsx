@@ -1,7 +1,7 @@
 import SocialLinks from "./SocialLinks"
 
 const Header = () => (
-    <section>
+    <section className="bg-white dark:bg-black">
         <div className="mx-auto max-w-7xl px-8 py-12 lg:pt-24">
             <div className="mx-auto max-w-xl">
                 <div className="flex md:items-center lg:justify-center md:space-x-5">
@@ -9,9 +9,10 @@ const Header = () => (
                         <div className="flex-shrink-0">
                             <div className="relative">
                                 <img
+                                    loading="lazy"
                                     className="h-16 w-16 lg:h-24 lg:w-24 rounded-full border border-white/10"
                                     src="/images/avatar.png"
-                                    alt="profile icon"
+                                    alt="Headshot"
                                 />
                                 <span
                                     className="absolute inset-0 rounded-full shadow-inner"
@@ -20,10 +21,10 @@ const Header = () => (
                             </div>
                         </div>
                         <div className="pt-1.5">
-                            <h1 className="lg:text-xl text-black dark:text-white">
+                            <h1 className="lg:text-4xl text-black dark:text-white font-bold tracking-tight">
                                 Christopher Chueng
                             </h1>
-                            <p className="text-sm font-light text-neutral-500">
+                            <p className="text-lg font-semibold font-light text-neutral-400 tracking-tight">
                                 Software Engineer
                             </p>
                             <SocialLinks />
@@ -31,7 +32,7 @@ const Header = () => (
                     </div>
                 </div>
                 <div className="mt-24 text-sm font-light">
-                    <p className="text-black dark:text-white">About</p>
+                    <p className="text-black dark:text-white font-semibold">ABOUT</p>
                     <div className="text-neutral-500 dark:text-neutral-400 space-y-3 mt-3">
                         <p>
                             "You are a culmination of all the skills you have developed throughout your life." - my dad
