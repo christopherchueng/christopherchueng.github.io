@@ -20,15 +20,15 @@ const Projects = () => (
               />
             </Link>
             <div className="w-full md:col-span-2">
-              <p className="group flex flex-row text-black hover:text-neutral-500 dark:text-white">
+              <p className="flex flex-row text-black hover:text-neutral-500 dark:text-white">
                 <Link
                   to={project.link}
-                  className="flex flex-row transition ease-in-out group-hover:text-neutral-500"
+                  className="group flex flex-row transition ease-in-out group-hover:text-neutral-500"
                 >
                   {project.title}
-                <p className="mt-0.5 pl-1 transition ease-in-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-neutral-500">
-                  ↗
-                </p>
+                  <p className="mt-0.5 pl-1 transition ease-in-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-neutral-500">
+                    ↗
+                  </p>
                 </Link>
               </p>
               <ul className="flex flex-row flex-wrap">
