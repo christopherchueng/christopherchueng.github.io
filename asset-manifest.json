@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/christopherchueng.github.io/static/css/main.a3c18a9d.css",
+    "main.js": "/christopherchueng.github.io/static/js/main.4be3ac55.js",
+    "static/media/github.svg": "/christopherchueng.github.io/static/media/github.76f82bf3057bd77009f5dd6b9116af1b.svg",
+    "static/media/linkedin.svg": "/christopherchueng.github.io/static/media/linkedin.1af04382760121b33400c887f20f7339.svg",
+    "static/media/gmail.svg": "/christopherchueng.github.io/static/media/gmail.0fee87b07713a7344a64663620166e25.svg",
+    "index.html": "/christopherchueng.github.io/index.html",
+    "main.a3c18a9d.css.map": "/christopherchueng.github.io/static/css/main.a3c18a9d.css.map",
+    "main.4be3ac55.js.map": "/christopherchueng.github.io/static/js/main.4be3ac55.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3c18a9d.css",
+    "static/js/main.4be3ac55.js"
+  ]
+}
