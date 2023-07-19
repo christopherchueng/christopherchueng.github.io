@@ -1,4 +1,3 @@
-import { contacts, Contact, icons } from "../constants/contacts"
 import SocialLinks from "./SocialLinks"
 
 const Header = () => (
@@ -34,7 +33,7 @@ const Header = () => (
                     </div>
                     <div className="mt-24 text-sm font-light">
                         <p className="text-black dark:text-white">About</p>
-                        <div className="text-neutral-500 dark:text-neutral-400 space-y-3 mt-3 text-justify">
+                        <div className="text-neutral-500 dark:text-neutral-400 space-y-3 mt-3">
                             <p>
                                 "You are a culmination of all the skills you have developed throughout your life." - my dad
                             </p>

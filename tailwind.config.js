@@ -5,6 +5,12 @@ module.exports = {
   ],
   theme: {
     fontSize: {
+      xxs: [
+        "0.5rem",
+        {
+          lineHeight: "0.75rem"
+        }
+      ],
       xs: [
         "0.75rem",
         {
@@ -99,6 +105,8 @@ module.exports = {
           "800": "#000066",
           "900": "#000033"
         },
+        blue:"#80D8FF",
+        darkBlue: "#005980"
       },
       fontFamily: {
         sans: ["Inter"],
