@@ -10,7 +10,7 @@ const Header = () => (
                             <div className="relative">
                                 <img
                                     loading="lazy"
-                                    className="h-16 w-16 lg:h-24 lg:w-24 rounded-full border border-white/10"
+                                    className="h-20 w-20 lg:h-32 lg:w-32 rounded-full align-middle border border-white/10"
                                     src="/images/avatar.png"
                                     alt="Headshot"
                                 />
@@ -20,11 +20,11 @@ const Header = () => (
                                 ></span>
                             </div>
                         </div>
-                        <div className="pt-1.5">
-                            <h1 className="lg:text-4xl text-black dark:text-white font-bold tracking-tight">
+                        <div>
+                            <h1 className="text-2xl lg:text-4xl text-black dark:text-white font-bold tracking-tight">
                                 Christopher Chueng
                             </h1>
-                            <p className="text-lg font-semibold font-light text-neutral-400 tracking-tight">
+                            <p className="lg:text-lg font-medium font-light text-neutral-400 tracking-tight">
                                 Software Engineer
                             </p>
                             <SocialLinks />
