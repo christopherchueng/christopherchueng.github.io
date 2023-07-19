@@ -5,7 +5,7 @@ const Header = () => (
         <div className="mx-auto max-w-7xl px-8 py-12 lg:pt-24">
             <div className="mx-auto max-w-xl">
                 <div>
-                    <div className="flex md:items-center justify-center md:space-x-5">
+                    <div className="flex md:items-center lg:justify-center md:space-x-5">
                         <div className="flex items-center space-x-5">
                             <div className="flex-shrink-0">
                                 <div className="relative">

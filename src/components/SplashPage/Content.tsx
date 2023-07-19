@@ -7,10 +7,6 @@ const Content = () => (
             <div className="mx-auto max-w-xl">
                 <div className="grid gap-12 md:gap-24">
                     <Experience />
-                    <div className="text-sm font-light">
-                        <p className="text-black dark:text-white">Contact</p>
-                        <SocialLinks />
-                    </div>
                 </div>
             </div>
         </div>
