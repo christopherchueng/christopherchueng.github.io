@@ -26,16 +26,14 @@ const three: Contact = {
     image: 'github-bw.png',
 }
 
-export const bytype = {
+export const contacts = [
     one,
     two,
     three,
-}
+]
 
 export const icons = [
     <Gmail className='w-4 h-4 transition ease-in-out hover:scale-125 duration-200' />,
     <LinkedIn className='w-4 h-4 transition ease-in-out hover:scale-125 duration-200' />,
     <GitHub className='w-4 h-4 transition ease-in-out hover:scale-125 duration-200' />
 ]
-
-export const contacts = Object.values(bytype)

@@ -16,8 +16,6 @@ const one: Role = {
     description: "Iterated and debugged Mulberry’s core product (browser extension) with a team of 6 engineers to successfully complete JIRA tickets in 2-week sprints.",
 }
 
-export const bytitle = {
+export const roles = [
     one,
-}
-
-export const roles = Object.values(bytitle)
+]

@@ -1,42 +1,37 @@
-import { roles } from "../constants/roles"
+import { projects } from "../constants/projects"
 
-const Experience = () => (
+const Projects = () => (
     <section>
         <div className="text-sm font-light">
-            <p className="text-black dark:text-white">Experience</p>
+            <p className="text-black dark:text-white">Projects</p>
             <div className="grid gap-6 mt-3">
-                {roles.map((role) => (
-                    <div key={role.title} className="text-neutral-500 items-start grid grid-cols-1 md:grid-cols-3">
-                        <p className="text-neutral-400 dark:text-neutral-400">{role.date}</p>
+            {projects.map((project) => (
+                    <div key={project.title} className="text-neutral-500 items-start grid grid-cols-1 md:grid-cols-3">
+                        <img className="w-56 md:w-36 lg:w-36 h-auto mt-1.5" src={project.image} alt={`${project.title} project`} />
                         <div className="md:col-span-2 w-full">
                             <p className="flex flex-row group text-black dark:text-white hover:text-neutral-500">
                                 <a
-                                    href={role.link}
+                                    href={project.link}
                                     className="transition ease-in-out flex flex-row"
                                 >
-                                    {role.title}
+                                    {project.title}
                                 </a>
                                 <p className="transition pl-1 mt-0.5 ease-in-out group-hover:text-neutral-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5">↗</p>
                             </p>
-                            <p>{role.location}</p>
                             <ul className="flex flex-row flex-wrap">
-                                {role.technologies.map(technology => (
+                                {project.technologies.map(technology => (
                                     <li key={technology} className="text-xs font-medium self-center border border-neutral-400 rounded-full py-1 px-3 mr-2 my-2 first:ml-0 last:mr-0 whitespace-nowrap">
                                         {technology}
                                     </li>
                                 ))}
                             </ul>
-                            <p>{role.description}</p>
+                            <p>{project.description}</p>
                         </div>
                     </div>
                 ))}
-                <a href="/resume.pdf" className="group flex flex-row items-center hover:text-neutral-500">
-                    <p>View Full Resume</p>
-                    <p className="pl-2 text-xs transition ease-in-out group-hover:translate-x-1 group-hover:text-neutral-500">⟶</p>
-                </a>
             </div>
         </div>
     </section>
 )
 
-export default Experience
+export default Projects
