@@ -1,42 +1,53 @@
-import { Link } from 'react-router-dom'
-import { projects } from "../constants/projects"
+import { Link } from "react-router-dom";
+import { projects } from "../constants/projects";
 
 const Projects = () => (
-    <section>
-        <div className="text-sm font-light">
-            <p className="text-black dark:text-white font-semibold">PROJECTS</p>
-            <div className="grid gap-6 mt-3">
-            {projects.map((project) => (
-                    <div key={project.title} className="text-neutral-500 items-start grid grid-cols-1 md:grid-cols-3">
-                        <Link to={project.link}>
-                            <img
-                                loading="lazy"
-                                src={project.image}
-                                alt={`${project.title} project`}
-                                className="w-56 md:w-36 lg:w-36 h-auto my-1.5 transition ease-in-out hover:scale-110 duration-300"
-                            />
-                        </Link>
-                        <div className="md:col-span-2 w-full">
-                            <p className="flex flex-row group text-black dark:text-white hover:text-neutral-500">
-                                <Link to={project.link} className="transition ease-in-out flex flex-row group-hover:text-neutral-500">
-                                    {project.title}
-                                </Link>
-                                <p className="transition pl-1 mt-0.5 ease-in-out group-hover:text-neutral-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5">↗</p>
-                            </p>
-                            <ul className="flex flex-row flex-wrap">
-                                {project.technologies.map(technology => (
-                                    <li key={technology} className="text-xs dark:text-white font-medium self-center border border-neutral-400 rounded-full py-1 px-3 mr-2 my-2 first:ml-0 last:mr-0 whitespace-nowrap">
-                                        {technology}
-                                    </li>
-                                ))}
-                            </ul>
-                            <p className='dark:text-neutral-400'>{project.description}</p>
-                        </div>
-                    </div>
+  <section>
+    <div className="text-sm font-light">
+      <p className="font-semibold text-black dark:text-white">PROJECTS</p>
+      <div className="mt-3 grid gap-6">
+        {projects.map((project) => (
+          <div
+            key={project.title}
+            className="grid grid-cols-1 items-start text-neutral-500 md:grid-cols-3"
+          >
+            <Link to={project.link}>
+              <img
+                loading="lazy"
+                src={project.image}
+                alt={`${project.title} project`}
+                className="my-1.5 h-auto w-56 transition duration-300 ease-in-out hover:scale-110 md:w-36 lg:w-36"
+              />
+            </Link>
+            <div className="w-full md:col-span-2">
+              <p className="group flex flex-row text-black hover:text-neutral-500 dark:text-white">
+                <Link
+                  to={project.link}
+                  className="flex flex-row transition ease-in-out group-hover:text-neutral-500"
+                >
+                  {project.title}
+                </Link>
+                <p className="mt-0.5 pl-1 transition ease-in-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-neutral-500">
+                  ↗
+                </p>
+              </p>
+              <ul className="flex flex-row flex-wrap">
+                {project.technologies.map((technology) => (
+                  <li
+                    key={technology}
+                    className="my-2 mr-2 self-center whitespace-nowrap rounded-full border border-neutral-400 px-3 py-1 text-xs font-medium first:ml-0 last:mr-0 dark:text-white"
+                  >
+                    {technology}
+                  </li>
                 ))}
+              </ul>
+              <p className="dark:text-neutral-400">{project.description}</p>
             </div>
-        </div>
-    </section>
-)
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+);
 
-export default Projects
+export default Projects;

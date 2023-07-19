@@ -1,16 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
-  darkMode: 'class',
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class",
   theme: {
     fontSize: {
       xxs: [
         "0.5rem",
         {
-          lineHeight: "0.75rem"
-        }
+          lineHeight: "0.75rem",
+        },
       ],
       xs: [
         "0.75rem",
@@ -94,25 +92,24 @@ module.exports = {
     extend: {
       colors: {
         black: "#121212",
-        "accent": {
-          "50": "#E5E5FF",
-          "100": "#CCCCFF",
-          "200": "#9999FF",
-          "300": "#6666FF",
-          "400": "#3333FF",
-          "500": "#0000FF",
-          "600": "#0000CC",
-          "700": "#000099",
-          "800": "#000066",
-          "900": "#000033"
+        accent: {
+          50: "#E5E5FF",
+          100: "#CCCCFF",
+          200: "#9999FF",
+          300: "#6666FF",
+          400: "#3333FF",
+          500: "#0000FF",
+          600: "#0000CC",
+          700: "#000099",
+          800: "#000066",
+          900: "#000033",
         },
-        blue:"#80D8FF",
+        blue: "#80D8FF",
       },
       fontFamily: {
         sans: ["Inter"],
-
       },
     },
   },
   plugins: [],
-}
+};

@@ -1,8 +1,8 @@
-import { BrowserRouter } from 'react-router-dom'
-import Content from './components/SplashPage/Content'
-import Header from './components/SplashPage/Header'
-import Footer from './components/SplashPage/Footer'
-import './index.css'
+import { BrowserRouter } from "react-router-dom";
+import Content from "./components/SplashPage/Content";
+import Header from "./components/SplashPage/Header";
+import Footer from "./components/SplashPage/Footer";
+import "./index.css";
 
 const App = () => (
   <BrowserRouter>
@@ -10,6 +10,6 @@ const App = () => (
     <Content />
     <Footer />
   </BrowserRouter>
-)
+);
 
-export default App
+export default App;
