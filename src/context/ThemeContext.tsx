@@ -36,6 +36,7 @@ export default function ThemeProvider({ children }: Props) {
   useEffect(() => {
     localStorage.setItem("theme", theme);
     document.body.className = theme;
+    document.getElementsByTagName("html")[0].setAttribute("class", theme);
   }, [theme]);
 
   return (
