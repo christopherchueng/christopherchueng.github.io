@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 import { roles } from "../constants/roles";
 
 const Experience = () => (
   <section>
     <div className="text-sm font-light">
-      <p className="font-semibold text-black dark:text-white">EXPERIENCE</p>
+      <p className="font-semibold text-black transition duration-300 ease-in-out dark:text-white">
+        EXPERIENCE
+      </p>
       <div className="mt-3 grid gap-6">
         {roles.map((role) => (
           <div
@@ -14,23 +17,23 @@ const Experience = () => (
               {role.date}
             </p>
             <div className="w-full md:col-span-2">
-              <p className="group flex flex-row text-black hover:text-neutral-500 dark:text-white">
-                <a
-                  href={role.link}
+              <p className="group flex w-fit flex-row text-black hover:text-neutral-500 dark:text-white">
+                <Link
+                  to={role.link}
                   className="flex flex-row transition ease-in-out group-hover:text-neutral-500"
                 >
                   {role.title}
-                </a>
-                <p className="mt-0.5 pl-1 transition ease-in-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-neutral-500">
-                  ↗
-                </p>
+                  <p className="mt-0.5 pl-1 transition ease-in-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-neutral-500">
+                    ↗
+                  </p>
+                </Link>
               </p>
               <p className="dark:text-neutral-400">{role.location}</p>
               <ul className="flex flex-row flex-wrap">
                 {role.technologies.map((technology) => (
                   <li
                     key={technology}
-                    className="my-2 mr-2 self-center whitespace-nowrap rounded-full border border-neutral-400 px-3 py-1 text-xs font-medium first:ml-0 last:mr-0 dark:text-white"
+                    className="my-2 mr-2 self-center whitespace-nowrap rounded-full border border-neutral-400 px-3 py-1 text-xs font-medium transition duration-300 ease-in-out first:ml-0 last:mr-0 dark:text-white"
                   >
                     {technology}
                   </li>

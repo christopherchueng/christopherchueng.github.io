@@ -23,7 +23,7 @@ const Header = () => {
           />
         </label>
       </div>
-      <div className="mx-auto max-w-7xl px-8 py-12 lg:pt-24">
+      <div className="mx-auto max-w-7xl px-8 py-12 lg:pt-10">
         <div className="mx-auto max-w-xl">
           <div className="flex md:items-center md:space-x-5 lg:justify-center">
             <div className="flex items-center space-x-5">
@@ -42,7 +42,7 @@ const Header = () => {
                 </div>
               </div>
               <div>
-                <h1 className="text-2xl font-bold tracking-tight text-black dark:text-white lg:text-4xl">
+                <h1 className="text-2xl font-bold tracking-tight text-black transition duration-300 ease-in-out dark:text-white lg:text-4xl">
                   Christopher Chueng
                 </h1>
                 <p className="font-light font-medium tracking-tight text-neutral-400 lg:text-lg">
@@ -53,7 +53,9 @@ const Header = () => {
             </div>
           </div>
           <div className="mt-24 text-sm font-light">
-            <p className="font-semibold text-black dark:text-white">ABOUT</p>
+            <p className="font-semibold text-black transition duration-300 ease-in-out dark:text-white">
+              ABOUT
+            </p>
             <div className="mt-3 space-y-3 text-neutral-500 dark:text-neutral-400">
               <p>
                 "You are a culmination of all the skills you have developed
